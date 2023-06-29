@@ -8,7 +8,7 @@ import React, { useState } from 'react'
 import {
   Routes,
   Route,
-  HashRouter
+  BrowserRouter as Router
 } from "react-router-dom"
 
 function App() {
@@ -42,7 +42,7 @@ function App() {
   }
   return (
 
-    <HashRouter>
+    <Router>
       <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} btntext={btntext} />
       <div className="container my-4">
         <Alert alert={alert}></Alert>
@@ -52,7 +52,7 @@ function App() {
         </Routes>
 
       </div>
-    </HashRouter>
+    </Router>
 
   );
 }
